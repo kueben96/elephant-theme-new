@@ -1,0 +1,31 @@
+nav {
+    display: grid;
+    grid-template-columns: 63% 1fr 10% ;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+}
+
+#logo{
+    grid-column: 1/2;
+    justify-self: end;
+
+}
+
+.hamburger {
+    justify-self: end;
+    grid-column: 2/3;
+}
+
+.hero img {
+    /*nach dem tut fuer eigenes masse nicht aendern*/
+    
+    position: absolute;
+    left: -15%;
+    top: -20%;
+    object-fit: cover;
+    width: 60vw;
+    height: 80vw;
+
+}
+
