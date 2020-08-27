@@ -43,12 +43,12 @@ var colors = [
 
   
 //where to start und where to end
-tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
-.fromTo(hdr_green, 1, {opacity: 0, x:30}, {opacity: 1, x:30})
-.fromTo(elephant, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut }, "=-1")
-.fromTo(slider, 1.2, {x:"-100%"}, {x:"0%", ease: Power2.easeInOut}, "-=1.2")
-//logo keine wirkung gerade, da image file, daher hamburger svg nutzen
-.fromTo(hamburger, 0.5, {opacity: 0, x:30}, {opacity: 1, x: 0})
+// tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+// .fromTo(hdr_green, 1, {opacity: 0, x:30}, {opacity: 1, x:30})
+// .fromTo(elephant, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut }, "=-1")
+// .fromTo(slider, 1.2, {x:"-100%"}, {x:"0%", ease: Power2.easeInOut}, "-=1.2")
+// //logo keine wirkung gerade, da image file, daher hamburger svg nutzen
+// .fromTo(hamburger, 0.5, {opacity: 0, x:30}, {opacity: 1, x: 0})
 
 
 
