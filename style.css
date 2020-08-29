@@ -56,6 +56,10 @@ h1 {
 span {
     padding: 4vh;
 }
+
+p {
+    padding: 4vh 0;
+}
 .container {
     grid-column: 2/3;
 }
@@ -155,16 +159,17 @@ section {
     margin-right: 1vw;
     z-index: 3;
     font-family: futura-pt-bold,sans-serif;
+    text-align: start;
     
 }
 
  .hdr-big{
-    font-size: 6vw;
+    font-size: 8vh;
     font-family: futura-pt-bold,sans-serif;
 
 }
 .hdr-small{
-    font-size: 3.5vw;
+    font-size: 5.5vh;
     font-family: futura-pt-bold,sans-serif;
 }
 
@@ -189,6 +194,7 @@ section {
     width: 58%;
     height: 9vh;
     z-index: 5;
+    cursor: pointer;
 }
 
 .arrow {
@@ -335,8 +341,9 @@ section {
   }
 
   .bottom-form textarea {
-      height: 250px;
+      height: 400px;
       color: var(--main-color-green);
+      width: 100%;
   }
 
   
@@ -358,7 +365,7 @@ form textarea{
  .btn{
     background: var(--main-color-green);
     border: #16A085;
-    width: 70%;
+    width: 100%;
     padding: 10px 0;
     margin: 20px auto;
     text-align: center;
