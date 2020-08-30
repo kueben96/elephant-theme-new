@@ -69,3 +69,5 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 //if you wanna use multiple animations:
 //tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 //.fromTo()
+
+
