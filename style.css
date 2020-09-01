@@ -441,9 +441,28 @@ p {
         min-height: 10vh;
         color: white;
         justify-content: space-around;
-        position: fixed;
+        /*position fixed geht nicht, wenn nav funktionieren soll */
+        position: relative;
         
     }
+    .nav-fixing {
+        position: fiixed;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 3px; 
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--main-color-dark);
+        position: absolute;
+        top: -20px;
+        right: 0px;
+      
+      
+    }     
+
     main {
         grid-row: 2/3;
         display: grid;

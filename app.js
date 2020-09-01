@@ -47,36 +47,36 @@ var colors = [
 
   let tl = gsap.timeline;
  
-  // gsap.to(body,{
-  //   background: "linear-gradient(to left,#223A44, #92A8AC)",
-  //   scrollTrigger: {
-  //     trigger: hero,
-  //     start: "top",
-  //     markers: true,
-  //     toggleActions: "restart complete restart reset"
-  //   }
-  // });
+  gsap.to(body,{
+    background: "linear-gradient(to left,#223A44, #92A8AC)",
+    scrollTrigger: {
+      trigger: hero,
+      start: "top",
+      markers: true,
+      toggleActions: "restart complete restart reset"
+    }
+  });
 
-  // gsap.to(body,{
-  //   background: "linear-gradient(to left, #516663, #e79d78)",
-  //   scrollTrigger: {
-  //     trigger: section_general,
-  //     start: "top",
-  //     markers: true,
-  //     toggleActions: "restart complete restart reset"
-  //   }
-  // });
+  gsap.to(body,{
+    background: "linear-gradient(to left, #516663, #e79d78)",
+    scrollTrigger: {
+      trigger: section_general,
+      start: "top",
+      markers: true,
+      toggleActions: "restart complete restart reset"
+    }
+  });
 
-  // gsap.to(body, {
-  //   background: "linear-gradient(to left, #e79d78, #e9d29a)",
-  //   ease: "power3.out",
-  //   scrollTrigger: {
-  //     trigger: section_pakete,
-  //     start: "top",
-  //     markers: true,
-  //     toggleActions: "restart complete restart reset"
-  //   }
-  // });
+  gsap.to(body, {
+    background: "linear-gradient(to left, #e79d78, #e9d29a)",
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: section_pakete,
+      start: "top",
+      markers: true,
+      toggleActions: "restart complete restart reset"
+    }
+  });
 
 
   
