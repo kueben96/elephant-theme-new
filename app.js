@@ -4,7 +4,7 @@ const logo = document.getElementById('#logo');
 const hamburger = document.querySelector('.hamburger'); 
 const headline = document.querySelector('.headline'); 
 const elephant = document.getElementById('#elephant');
-const hdr_green = document.querySelector('.hdr-green');
+const hdr_green = document.querySelectorAll('.hdr-green');
 const section_general = document.querySelector('.general');
 const p_general_info = document.querySelector('.general-info');
 const section_pakete = document.querySelector('.pakete');
@@ -38,6 +38,21 @@ const tl = gsap.timeline({
   }
 });
 
+
+
+// Functions for Directing to Social Media
+function DirectTwitter() {
+  console.log("MOIN");
+}
+// Functions for Directing to Social Media
+function DirectInsta() {
+  console.log("MOIN");
+}
+// Functions for Directing to Social Media
+function DirectFacebook() {
+  console.log("MOIN");
+}
+
 const navSlide = () => {
   const burger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav-links');
@@ -50,12 +65,13 @@ const navSlide = () => {
 
     // Links animieren
     navLinks.forEach((link, index) => {
+  
       console.log(index);
       if ( link.style.animation) {
         link.style.animation = '';
-        tl.pause();
-        setNormalBackground();
-        console.log("background: "+body.style.background);
+        tl2.pause();
+        /*setNormalBackground();*/
+        console.log("background: "+ body.style.background);
         console.log("link.style.animation: " + link.style.animation);
         
       }
@@ -65,22 +81,28 @@ const navSlide = () => {
         console.log("background: "+body.style.background);
         console.log("link.style.animation: " + link.style.animation);
         animColorBody();
-        tl.restart();
+        tl2.restart();
       }
       
     });
   });  
 }
 
+// Animations
+
+tl.fromTo(hdr_green, 4, {opacity: 0, x:30}, {opacity: 1, x:30})
+.fromTo(hamburger, 3, {opacity: 0, x:30}, {opacity: 1, x: 0}, "=-4");
+
 
 const setNormalBackground = () => {
   body.style.background = "linear-gradient(to left,#223A44, #92A8AC)";
 } 
 
+tl2 = gsap.timeline()
 
 const animColorBody = () => {
   for (let i = 0; i < colors.length; i++) {
-    tl.to(body, 1, {
+    tl2.from(body, 1, {
       background:
         "-webkit-linear-gradient(-4deg, " +
         colors[i].left +

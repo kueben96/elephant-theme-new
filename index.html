@@ -18,16 +18,16 @@
             <img class="hamburger" src="img/nav-squares.svg" alt="hamburger">
             <ul class = "nav-links">
                 <li>
-                    <a href="#Start">Start</a>
+                    <a href="#">Start</a>
                 </li>
                 <li>
-                    <a href="#Über uns">Über uns</a>
+                    <a href="#general">Über uns</a>
                 </li>
                 <li>
-                    <a href="#Services">Services</a>
+                    <a href="#pakete">Services</a>
                 </li>
                 <li>
-                    <a href="#Kontakt">Kontakt</a>
+                    <a href="#contact">Kontakt</a>
                 </li>
             </ul>
         </nav>
@@ -53,7 +53,7 @@
 
     <main>
         <div class="container">
-            <div class="general color-section">
+            <div class="general color-section" id ="general">
                 <div class="general-info">
                     <h1>Elephant Designs</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit placeat iste?
@@ -64,7 +64,7 @@
                 <img id="placeholder1" src="img/grey_square_hor.png" alt="Placeholder">
             </div>
 
-            <div class="pakete color-section">
+            <div class="pakete color-section" id ="pakete">
                 <div class="paket-item">
                     <div class="rectangle"></div>
                     <h1>Elephant Site</h1>
@@ -98,7 +98,7 @@
 
     <footer>
 
-        <div class="contact color-section"> 
+        <div class="contact color-section" id ="contact"> 
             <div class="tel">
                 <h1>Ruf uns einfach an</h1>
                 <img src="img/telefon-von-altem-design.svg" class="telephone" alt="telefon">
@@ -126,9 +126,9 @@
                     <a href="#">Impressum</a>
                 </div>
                 <div class="social-media">
-                    <img src="img/logo-twitter.png">
-                         <img src="img/logo-facebook.png">
-                         <img src="img/logo-instagram.png">
+                    <input type="image" class = "social-media-logo" src="img/logo-twitter.png" onclick="DirectTwitter();">
+                    <input type="image" class = "social-media-logo" src="img/logo-facebook.png" onclick="DirectFacebook();">
+                    <input type="image"  class = "social-media-logo" src="img/logo-instagram.png" onclick="DirectInsta();">
                 </div>
                 </div>
          </div>   
