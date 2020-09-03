@@ -71,3 +71,68 @@ tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
 //.fromTo()
 
 
+ // let tl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: section_general, 
+  //     start: "top", 
+  //     markers: true
+  //   }
+  // }
+  // );
+
+  const tl = gsap.timeline({
+		ScrollTrigger: {}
+	})
+ 
+tl.fromTo(hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut })
+.fromTo(hdr_green, 1, {opacity: 0, x:30}, {opacity: 1, x:30})
+.fromTo(elephant, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut }, "=-1")
+.fromTo(slider, 1.2, {x:"-100%"}, {x:"0%", ease: Power2.easeInOut}, "-=1.2")
+//logo keine wirkung gerade, da image file, daher hamburger svg nutzen
+.fromTo(hamburger, 0.5, {opacity: 0, x:30}, {opacity: 1, x: 0})
+.to(body,{
+  background: "linear-gradient(to left, #516663 70%, #e79d78)",
+  scrollTrigger: {
+    trigger: section_general,
+    start: "top",
+    markers: true,
+    toggleActions: "restart complete restart reset"
+  }
+});
+
+  // gsap.fromTo(body,{
+  //   background: "linear-gradient(to left,#223A44, #92A8AC)",
+  //   scrollTrigger: {
+  //     trigger: hero,
+  //     start: "top",
+  //     markers: true,
+  //     toggleActions: "restart complete restart reset"
+  //   }
+  // }, {background: 'red', ease: Power3.easeInOut}
+  // );
+
+  // gsap.to(body,{
+  //   background: "linear-gradient(to left, #516663, #e79d78)",
+  //   scrollTrigger: {
+  //     trigger: section_general,
+  //     start: "top",
+  //     markers: true,
+  //     toggleActions: "restart complete restart reset"
+  //   }
+  // });
+
+  // gsap.to(body, {
+  //   background: "linear-gradient(to left, #e79d78, #e9d29a)",
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: section_pakete,
+  //     start: "top",
+  //     markers: true,
+  //     toggleActions: "restart complete restart reset"
+  //   }
+  // });
+
+
+  
+
+

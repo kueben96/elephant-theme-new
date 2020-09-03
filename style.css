@@ -22,9 +22,21 @@
 body {
     display: grid;
     grid-template-rows: 100vh auto auto ;
-    background: linear-gradient(to left,#223A44, #92A8AC);
-
+    /*background: linear-gradient(to left,#223A44, #92A8AC);*/
+    background: linear-gradient(to bottom, #223A44, #92A8AC, #516663, #e79d78,
+    #e9d29a );
+    background-repeat: no-repeat;
     /*background: green;*/
+}
+
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #223A44 75%);
 }
 
 header{
@@ -196,6 +208,7 @@ p {
     
     .hdr-green {
         color: var(--main-color-green);
+      
     }
     
     #hero-button {
