@@ -90,7 +90,7 @@ p {
         flex-direction: column;
         letter-spacing: 3px; 
         height: 100vh;
-        width: 50%;
+        width: 33.3%;
         justify-content: space-around;
         align-items: center;
         background-color: var(--main-color-dark);
@@ -132,7 +132,10 @@ p {
         height: 100px;
         grid-column: 1/2;
         justify-self: end;
-      
+        position: fixed;
+        left: 40vw;
+        z-index: 11;
+        padding-top: 50px;
     }
 
     .hamburger {
@@ -305,6 +308,7 @@ p {
     
       .paket-item{
         width: 100%;
+        text-align: center;
     }
     .rectangle {
         height: 50vh;
@@ -464,7 +468,6 @@ p {
         justify-content: space-around;
         /*position fixed geht nicht, wenn nav funktionieren soll */
         position: relative;
-        
     }
     .nav-fixing {
         position: fiixed;
@@ -477,11 +480,10 @@ p {
         justify-content: space-around;
         align-items: center;
         background-color: var(--main-color-dark);
-        position: absolute;
+        position: fixed;
         top: -20px;
         right: 0px;
-      
-      
+        z-index: 10;
     }     
 
     main {
@@ -515,11 +517,12 @@ p {
    
 
     #logo{
-        position: absolute;
+        position: fixed;
         left: 45vw;
-    
+        z-index: 11;
+        padding-top: 70px;
         /*grid-column: 1/2;*/
-        
+       
         /*justify-self: end;*/
         
     }
