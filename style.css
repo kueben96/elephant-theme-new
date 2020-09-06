@@ -23,14 +23,15 @@ body {
     display: grid;
     grid-template-rows: 100vh auto auto ;
     /*background: linear-gradient(to left,#223A44, #92A8AC);*/
-    background: linear-gradient(to bottom, #223A44, #92A8AC, #665154,
+    background: linear-gradient(to bottom, #223A44, #92A8AC, #e9d29a,
     #e9d29a);
     background-repeat: no-repeat;
     /*background: green;*/
 }
 
 body:before{
-	content:'';
+    content: attr(data-before);
+	/*content:'';*/
 	position: fixed;
 	top: 0;
 	bottom: 0;

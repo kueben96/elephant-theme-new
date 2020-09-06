@@ -5,6 +5,7 @@ const hamburger = document.querySelector('.hamburger');
 const headline = document.querySelector('.headline'); 
 const elephant = document.getElementById('#elephant');
 const hdr_green = document.querySelectorAll('.hdr-green');
+const btn_hero = document.getElementById('hero-button');
 const section_general = document.querySelector('.general');
 const p_general_info = document.querySelector('.general-info');
 const section_pakete = document.querySelector('.pakete');
@@ -18,6 +19,7 @@ var colors = [
   { left: "#516663", middle: "#c1c1b5", right: "#e79d78" },
   { left: "#e79d78", middle: "#916a4a", right: "#e9d29a" }
 ];
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -91,11 +93,23 @@ const navSlide = () => {
 // Animations
 
 tl.fromTo(hdr_green, 4, {opacity: 0, x:30}, {opacity: 1, x:30})
-.fromTo(hamburger, 3, {opacity: 0, x:30}, {opacity: 1, x: 0}, "=-4");
+.fromTo(hamburger, 3, {opacity: 0, x:30}, {opacity: 1, x: 0}, "=-4")
+.from(btn_hero, 2,  {"top": "-100%" }, "=-3");
+
+gsap.to(logo, {
+  scrollTrigger: {
+    trigger: body,
+    markers: true,
+    start: "top"
+  },
+  x: "-100%"
+}
+  )
 
 
 const setNormalBackground = () => {
-  body.style.background = "linear-gradient(to left,#223A44, #92A8AC)";
+  // body.style.background = "linear-gradient(to left,#223A44, #92A8AC)";
+  body.setAttribute('data-before', 'background');
 } 
 
 tl2 = gsap.timeline()
