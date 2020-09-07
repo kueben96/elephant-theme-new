@@ -1,10 +1,12 @@
 Logo Animation:
-    ☐ Fix Flex Header
+    ✔ Fix Flex Header @done (9/7/2020, 1:58:56 PM)
     ☐ Animate when logo is above another object
 Blur Animation:
     ☐ Blur Background
+✔ close nav bar on click @done (9/7/2020, 2:43:21 PM)
+☐ logo im footer
 
-☐ close nav bar on click
+eventlistener blur testen on animationend
 
 ✔ Background Transition @done (9/6/2020, 1:21:13 PM)
 ☐ Full Responsiveness

@@ -27,18 +27,7 @@ ScrollTrigger.defaults({
   toggleActions: "restart pause reverse restart",
   markers: true
 });
-const tl = gsap.timeline({
-  ScrollTrigger: {
-    trigger: section_general,
-    start: "top top",
-    id: "trigger-genereal"
-  },
-  ScrollTrigger: {
-    trigger: section_pakete,
-    start: "top top",
-    id: "trigger-pakete"
-  }
-});
+const tl = gsap.timeline();
 
 
 
@@ -59,35 +48,53 @@ const navSlide = () => {
   const burger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
+  const navCloseLink = document.getElementById('nav-close');
 
-  // toggle nav class
-  burger.addEventListener('click', () =>{
-    nav.classList.toggle('nav-active');
-   
-
-    // Links animieren
-    navLinks.forEach((link, index) => {
   
-      console.log(index);
-      if ( link.style.animation) {
-        link.style.animation = '';
-        tl2.pause();
-        /*setNormalBackground();*/
-        console.log("background: "+ body.style.background);
-        console.log("link.style.animation: " + link.style.animation);
-        
-      }
-      else {
-        // links animieren
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 0.2}s`
-        console.log("background: "+body.style.background);
-        console.log("link.style.animation: " + link.style.animation);
-        animColorBody();
-        tl2.restart();
-      }
+  // toggle nav class
+  [burger, navCloseLink].forEach(item => {
+    item.addEventListener('click', () =>{
+      nav.classList.toggle('nav-active');
       
-    });
+  
+        // Links animieren
+      navLinks.forEach((link, index) => {
+    
+        console.log(index);
+        if ( link.style.animation) {
+          link.style.animation = '';
+          tl2.pause();
+          /*setNormalBackground();*/
+          console.log("background: "+ body.style.background);
+          console.log("link.style.animation: " + link.style.animation);
+          
+        }
+        else {
+          // links animieren
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index /7 + 0.2}s`
+          console.log("background: "+body.style.background);
+          console.log("link.style.animation: " + link.style.animation);
+          animColorBody();
+          tl2.restart();
+        }
+
+        link.addEventListener('click', () =>{
+          nav.classList.toggle('nav-active');
+        })
+        
+      });
+
+  })
+
+
+    //here zu
   });  
+
+  // navCloseLink.addEventListener('click', () =>{
+  //   nav.classList.toggle('nav-active');
+
+  // });
+
 }
 
 // Animations

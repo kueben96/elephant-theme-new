@@ -231,7 +231,7 @@ p {
         background-color: var(--main-color-green);
         border: 5px solid transparent;
         padding: 80px;     
-        z-index: 10000;
+        z-index: 5;
         cursor: pointer;
     }
     
@@ -438,12 +438,17 @@ p {
         align-items: center;
         padding: 20px 0;
         height: 20vh;
-        z-index: 999;
+        z-index: 5;
     }
     .social-media {
         display: flex;
         justify-content: space-between;
         width: 30vw;
+    }
+
+    #jump-start-logo{
+        width: 100px;
+        height: 100px;
     }
 
    
@@ -484,7 +489,7 @@ p {
         position: fixed;
         top: -20px;
         right: 0px;
-        z-index: 10;
+        z-index: 5;
     }     
 
     main {
@@ -520,7 +525,7 @@ p {
     #logo{
         position: fixed;
         left: 45vw;
-        z-index: 11;
+        z-index: 4;
         padding-top: 70px;
         /*grid-column: 1/2;*/
        
@@ -563,6 +568,7 @@ p {
         position: absolute;
         top: 100%;
         right: -50%;
+        z-index: 5;
         
     }
         
