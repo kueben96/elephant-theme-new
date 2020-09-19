@@ -6,7 +6,21 @@ Blur Animation:
 ✔ close nav bar on click @done (9/7/2020, 2:43:21 PM)
 ☐ logo im footer
 
-eventlistener blur testen on animationend
-
 ✔ Background Transition @done (9/6/2020, 1:21:13 PM)
 ☐ Full Responsiveness
+
+☐ Elefant Bild komprimieren
+
+Nav:
+    ☐  nav block transparenter
+    ☐  nav transition
+    ☐ wenn nav offen, dann hintergrund farbwechsel
+
+
+☐ Schrift zu groß überall 
+
+☐ hero button von rechts nach links
+
+☐ balken schmaler und schrift  weiß
+☐ alles auf 100%
+☐ raster auf hintergrund

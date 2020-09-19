@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <!--<link rel="stylesheet" media="(max-width: 700px)" href="style_mobile.css" /> -->
     <title>elephant designs</title>
 </head>
@@ -12,11 +12,16 @@
 <body>
 
     <header>
-        <img id="logo" src="img/elephantDesigns_Logo_Light.svg" alt="logo" />
-
-             <nav>
+        <div class="headline-logo">
+            <h1>see it once</h1>
+            <img id="logo" src="img/elephantDesigns_Logo_Light.svg" alt="logo" />
+            <h1>always remember</h1>
             <img class="hamburger" src="img/nav-squares.svg" alt="hamburger">
-            <ul class = "nav-links">
+        </div>
+        
+        <nav>   
+           
+            <ul class="nav-links">
                 <li>
                     <a href="#" id="nav-close">-Navigation Schließen-</a>
                 </li>
@@ -31,14 +36,17 @@
                 </li>
             </ul>
         </nav>
-  
-       
+
+
         <section>
             <div class="hero">
                 <img id="elephant" src="img/ElephantGermany.png" alt="elephant">
-                <div class="headline">
-                    <div class="hdr-big">SEE IT <span class="hdr-green hdr-big">ONCE</span></div>
-                    <div class="hdr-small"><span class="hdr-green hdr-small">ALWAYS</span> REMEMBER</div>
+             
+                <div class="headline-2">
+                    <h1>Headline</h1>
+                    <span>Von einem erstgespräch, über ein Kennenlernen und die gemeinsamen Planung, bis hin zur fertigen Website stehen wir dir zur Seite.</span>
+                    <!-- <div class="hdr-big">SEE IT <span class="hdr-green hdr-big">ONCE</span></div>
+                    <div class="hdr-small"><span class="hdr-green hdr-small">ALWAYS</span> REMEMBER</div> -->
                 </div>
                 <button id="hero-button">Erfinde deine Marke neu &nbsp; &nbsp; &nbsp; <input type="image"
                         id="arrow-button" src="img/arrow-right.svg" alt="" /></button>
@@ -47,45 +55,65 @@
 
         </section>
     </header>
-    <div class="slider">
-
-    </div>
 
     <main>
         <div class="container">
-            <div class="general color-section" id ="general">
+            <div class="general color-section">
                 <div class="general-info">
                     <h1>Elephant Designs</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit placeat iste?
-                        Cumque fugit expedita sint animi consectetur perferendis laborum, excepturi similique quam
-                        facilis optio minima exercitationem! Debitis, nesciunt facilis? facilis optio minima
-                        exercitationem! Debitis, nesciunt facilis </p>
+                    <p>Den Kern von elephant designs bildet ein Team und Netzwerk aus jungen Grafikern, Programmierern und online-affinen Leuten mit der richtigen Note an Kreativität. Studenten und Absolventen, die schon Erfahrungen im Bereich der Websiteprogrammierung und im Grafikdesign sammeln konnten und dies nun im Arbeitsleben umsetzen wollen - und damit unsere Kunden und natürlich deren Kunden begeistern wollen.  </p>
                 </div>
                 <img id="placeholder1" src="img/grey_square_hor.png" alt="Placeholder">
             </div>
 
-            <div class="pakete color-section" id ="pakete">
+            <div class="pakete">
+                <p>All unsere Pakete umfassen ein kostenloses Erstgespräch und ein Kennenlernen - dieses findet je nach Gegebenheit online oder persönlich statt. Anschließend erstellen unsere Grafiker nach deinen Vorstellungen erste Designvorschläge. Bist du mit diesen zufrieden, starten die Webdesigner ihre Arbeit. Die dabei entstandene Website kann hinterher entsprechend deiner Wünsche ebenfalls noch angepasst werden. Je nach gebuchtem Paket, übernehmen wir später anfallenden Anpassungen wie beispielsweise Änderungen der Öffnungszeiten. Alternativ geben wir  nach Fertigstellung der Website einen Leitfaden an die Hand, wie du kleine Änderungen selbst vornehmen kannst. Alle Pakete lassen sich ebenfalls mit zusätzlichen Bausteinen  individualisieren, um ein einzigartiges und zufriedenstellendes Endprodukt zu erhalten.</p>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>Elephant<br>Site</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nihil omnis nam mollitia sed
-                        ipsum illo! Soluta necessitatibus perspiciatis porro aliquid dolores quia distinctio ratione
-                        voluptatem, iusto consequatur officia rem.</p>
+                    <h1>elephant base</h1>
+                    <p>Bei elephant base handelt es sich um das Grundpaket. Wir erstellen die Website und die gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht, geben wir dir noch einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
+                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen eine Servicegebühr möglich.
+                        Inklusive sind somit: 
+                        </p>
+                        <ul>
+                            <li>Grafiken</li>
+                            <li>Webdesign</li>
+                            <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
+                            <li>Tipps & Tricks für die Weiterführung</li>
+                        </ul> 
                 </div>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>Elephant<br>Brand</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nihil omnis nam mollitia sed
-                        ipsum illo! Soluta necessitatibus perspiciatis porro aliquid dolores quia distinctio ratione
-                        voluptatem, iusto consequatur officia rem.</p>
+                    <h1>elephant base plus</h1>
+                    <p>Bei elephant base plus handelt es sich um das Grundpaket inklusive Webhosting. Wir erstellen die Website und die gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht, geben wir dir noch einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
+                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen eine Servicegebühr möglich.
+                        Das Webhosting übernehmen wir dabei ebenfalls. 
+                        </p>
+                        <ul>
+                            <li>Grafiken</li>
+                            <li>Webdesign</li>
+                            <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
+                            <li>Tipps & Tricks für die Weiterführung</li>
+                            <li>Webhosting</li>
+                        </ul> 
                 </div>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>Elephant<br>Plus</h1>
-                    <p>Lorem ipsum test dolor, sit amet consectetur adipisicing elit. Distinctio nihil omnis nam mollitia sed
-                        ipsum illo! Soluta necessitatibus perspiciatis porro aliquid dolores quia distinctio ratione
-                        voluptatem, iusto consequatur officia rem.</p>
+                    <h1>elephant all inclusive</h1>
+                    <p>Elephant all inclusive ist dein Rundum-sorglos-Paket. Alle Optionen von elephant base plus sind enthalten. Darüber hinaus übernehmen wir für XX Jahre den kompletten Support der Website.</p>
+                    <ul>
+                        <li>Grafiken</li>
+                        <li>Webdesign</li>
+                        <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
+                        <li>Tipps & Tricks für die Weiterführung</li>
+                        <li>Webhosting</li>
+                        <li>Support der Website für XX Jahre</li>
+                    </ul> 
                 </div>
+
+                <p>
+                    Zusätzlich bieten wir an, deine Website so zu optimieren, dass diese von den relevanten Suchmaschinen im Internet gefunden und weit oben unter den Suchergebnissen gelistet wird. Dies ist insbesondere wichtig, um neue Kunden anzusprechen. 
+                </p>
 
             </div>
 
@@ -98,7 +126,7 @@
 
     <footer>
 
-        <div class="contact color-section" id ="contact"> 
+        <div class="contact color-section">
             <div class="tel">
                 <h1>Ruf uns einfach an</h1>
                 <img src="img/telefon-von-altem-design.svg" class="telephone" alt="telefon">
@@ -115,7 +143,7 @@
                         <textarea name="name" id="" placeholder="Deine Nachricht an uns"></textarea>
                     </div>
                     <input type="submit" name="submit" value="Absenden" class="btn" id="form-button">
-                </form>  
+                </form>
             </div>
             <div class="about-info">
                 <div class="copyright">
@@ -124,27 +152,24 @@
                 <div class="legals">
                     <a href="#">Datenschutz</a>
                     <a href="#">Impressum</a>
-
                 </div>
                 <div class="social-media">
-                    <input type="image" class = "social-media-logo" src="img/logo-twitter.png" onclick="DirectTwitter();">
-                    <input type="image" class = "social-media-logo" src="img/logo-facebook.png" onclick="DirectFacebook();">
-                    <input type="image"  class = "social-media-logo" src="img/logo-instagram.png" onclick="DirectInsta();">
-                    
+                    <img src="img/logo-twitter.png">
+                    <img src="img/logo-facebook.png">
+                    <img src="img/logo-instagram.png">
                 </div>
                 <input type="image" id="jump-start-logo" src="img/elephantDesigns_Logo_Light.svg" />
-        
-                </div>
-         </div>   
-        
-    </footer>
-            
+            </div>
+        </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"
-                integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q=="
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
-            <script src="app.js"></script>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"
+        integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 

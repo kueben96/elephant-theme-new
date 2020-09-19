@@ -155,7 +155,3 @@ const animColorBody = () => {
 
 
 navSlide();
-
-
-
- 
