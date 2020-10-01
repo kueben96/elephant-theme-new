@@ -1,26 +1,20 @@
-Logo Animation:
-    ✔ Fix Flex Header @done (9/7/2020, 1:58:56 PM)
-    ☐ Animate when logo is above another object
-Blur Animation:
-    ☐ Blur Background
-✔ close nav bar on click @done (9/7/2020, 2:43:21 PM)
-☐ logo im footer
-
-✔ Background Transition @done (9/6/2020, 1:21:13 PM)
-☐ Full Responsiveness
-
-☐ Elefant Bild komprimieren
-
 Nav:
-    ☐  nav block transparenter
-    ☐  nav transition
-    ☐ wenn nav offen, dann hintergrund farbwechsel
+    ☐ Da die Position absolut ist, wird die Navigation nur ganz oben auf der Seite geöffnet werden, aber ich möchte ausgehen von Screen/Viewport
+    ✔ Class verschwindet nicht wieder wenn man erneut auf Hamburger klickt @done (9/21/2020, 3:40:27 PM)
+    ✔ Button und Headline verstecken @done (9/21/2020, 3:40:18 PM)
+    ✔ Elephant in die Mitte @done (9/21/2020, 3:40:01 PM)
+    ☐ mobile nav zu weit oben 
+
+Hero:
+    Headline und hero-button überschneiden sich teilweise
+Rest:
+    ☐ Restliche CSS für Body
+    ☐ Restliche Todos checken
+    ☐ Bullet Points
+    ☐ Collapsing Button
 
 
-☐ Schrift zu groß überall 
 
-☐ hero button von rechts nach links
-
-☐ balken schmaler und schrift  weiß
-☐ alles auf 100%
-☐ raster auf hintergrund
+Animation:
+    ☐ Hintergrund Farbwechsel, wenn in Nav
+    ☐ Hero Button von rechts nach links rein

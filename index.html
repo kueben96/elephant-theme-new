@@ -13,38 +13,48 @@
 
     <header>
         <div class="headline-logo">
-            <h1>see it once</h1>
-            <img id="logo" src="img/elephantDesigns_Logo_Light.svg" alt="logo" />
-            <h1>always remember</h1>
-            <img class="hamburger" src="img/nav-squares.svg" alt="hamburger">
+            <div class="hdr-big" id="slogan-first">SEE IT <span class="hdr-green hdr-big">ONCE</span></div>
+            <img class="logo" id="logo" src="img/elephantDesigns_Logo_Light.svg" alt="logo" />
+            <div class="hdr-big" id="slogan-second"><span class="hdr-green hdr-big">ALWAYS</span> REMEMBER</div>
         </div>
-        
-        <nav>   
+        <img id="hamburger-closed" class="hamburger" src="img/nav-squares.svg" alt="hamburger">
+        <div class="nav-section">
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" >Service</a>
+                    </li>
+                    <li>
+                        <a href="#general">Pakete</a>
+                    </li>
+
+                    <input type="image" class="logo" id="nav-logo" src="img/elephantDesigns_Logo_Light.svg" alt="logo" />
+                    <li>
+                        <a href="#pakete">Über Uns</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+                <!-- <img id="nav-hamburger" class="hamburger" src="img/nav-squares-open.svg" alt="hamburger"> -->
+            </nav>       
+            <section id="nav-hero">
+                <img id="nav-elephant" src="img/ElephantGermany.png" alt="elephant">
+            </section>
            
-            <ul class="nav-links">
-                <li>
-                    <a href="#" id="nav-close">-Navigation Schließen-</a>
-                </li>
-                <li>
-                    <a href="#general">Über uns</a>
-                </li>
-                <li>
-                    <a href="#pakete">Services</a>
-                </li>
-                <li>
-                    <a href="#contact">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
+
+        </div>
+
 
 
         <section>
             <div class="hero">
-                <img id="elephant" src="img/ElephantGermany.png" alt="elephant">
-             
-                <div class="headline-2">
-                    <h1>Headline</h1>
-                    <span>Von einem erstgespräch, über ein Kennenlernen und die gemeinsamen Planung, bis hin zur fertigen Website stehen wir dir zur Seite.</span>
+                <img class = "hero-elephant" src="img/ElephantGermany.png" alt="elephant">
+
+                <div class="hero-headline">
+                    <h1>Für euch da</h1>
+                    <span>Von einem erstgespräch, über ein Kennenlernen und die gemeinsamen Planung, bis hin zur
+                        fertigen Website stehen wir dir zur Seite.</span>
                     <!-- <div class="hdr-big">SEE IT <span class="hdr-green hdr-big">ONCE</span></div>
                     <div class="hdr-small"><span class="hdr-green hdr-small">ALWAYS</span> REMEMBER</div> -->
                 </div>
@@ -58,49 +68,69 @@
 
     <main>
         <div class="container">
-            <div class="general color-section">
+            <div class="general" id="general">
                 <div class="general-info">
                     <h1>Elephant Designs</h1>
-                    <p>Den Kern von elephant designs bildet ein Team und Netzwerk aus jungen Grafikern, Programmierern und online-affinen Leuten mit der richtigen Note an Kreativität. Studenten und Absolventen, die schon Erfahrungen im Bereich der Websiteprogrammierung und im Grafikdesign sammeln konnten und dies nun im Arbeitsleben umsetzen wollen - und damit unsere Kunden und natürlich deren Kunden begeistern wollen.  </p>
+                    <p>Den Kern von elephant designs bildet ein Team und Netzwerk aus jungen Grafikern, Programmierern
+                        und online-affinen Leuten mit der richtigen Note an Kreativität. Studenten und Absolventen, die
+                        schon Erfahrungen im Bereich der Websiteprogrammierung und im Grafikdesign sammeln konnten und
+                        dies nun im Arbeitsleben umsetzen wollen - und damit unsere Kunden und natürlich deren Kunden
+                        begeistern wollen. </p>
                 </div>
-                <img id="placeholder1" src="img/grey_square_hor.png" alt="Placeholder">
+                <img id="placeholder-1" src="img/grey_square_hor.png" alt="Placeholder">
             </div>
 
-            <div class="pakete">
-                <p>All unsere Pakete umfassen ein kostenloses Erstgespräch und ein Kennenlernen - dieses findet je nach Gegebenheit online oder persönlich statt. Anschließend erstellen unsere Grafiker nach deinen Vorstellungen erste Designvorschläge. Bist du mit diesen zufrieden, starten die Webdesigner ihre Arbeit. Die dabei entstandene Website kann hinterher entsprechend deiner Wünsche ebenfalls noch angepasst werden. Je nach gebuchtem Paket, übernehmen wir später anfallenden Anpassungen wie beispielsweise Änderungen der Öffnungszeiten. Alternativ geben wir  nach Fertigstellung der Website einen Leitfaden an die Hand, wie du kleine Änderungen selbst vornehmen kannst. Alle Pakete lassen sich ebenfalls mit zusätzlichen Bausteinen  individualisieren, um ein einzigartiges und zufriedenstellendes Endprodukt zu erhalten.</p>
+            <div class="pakete"  id="pakete">
+                <h1>Pakete</h1>
+                <p>All unsere Pakete umfassen ein kostenloses Erstgespräch und ein Kennenlernen - dieses findet je nach
+                    Gegebenheit online oder persönlich statt. Anschließend erstellen unsere Grafiker nach deinen
+                    Vorstellungen erste Designvorschläge. Bist du mit diesen zufrieden, starten die Webdesigner ihre
+                    Arbeit. Die dabei entstandene Website kann hinterher entsprechend deiner Wünsche ebenfalls noch
+                    angepasst werden. Je nach gebuchtem Paket, übernehmen wir später anfallenden Anpassungen wie
+                    beispielsweise Änderungen der Öffnungszeiten. Alternativ geben wir nach Fertigstellung der Website
+                    einen Leitfaden an die Hand, wie du kleine Änderungen selbst vornehmen kannst. Alle Pakete lassen
+                    sich ebenfalls mit zusätzlichen Bausteinen individualisieren, um ein einzigartiges und
+                    zufriedenstellendes Endprodukt zu erhalten.</p>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>elephant base</h1>
-                    <p>Bei elephant base handelt es sich um das Grundpaket. Wir erstellen die Website und die gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht, geben wir dir noch einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
-                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen eine Servicegebühr möglich.
-                        Inklusive sind somit: 
-                        </p>
-                        <ul>
-                            <li>Grafiken</li>
-                            <li>Webdesign</li>
-                            <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
-                            <li>Tipps & Tricks für die Weiterführung</li>
-                        </ul> 
+                    <h2>elephant<br />base</h2>
+                    <p>Bei elephant base handelt es sich um das Grundpaket. Wir erstellen die Website und die
+                        gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht, geben wir dir noch
+                        einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
+                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen
+                        eine Servicegebühr möglich.
+                        Inklusive sind somit:
+                    </p>
+                    <ul>
+                        <li>Grafiken</li>
+                        <li>Webdesign</li>
+                        <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
+                        <li>Tipps & Tricks für die Weiterführung</li>
+                    </ul>
                 </div>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>elephant base plus</h1>
-                    <p>Bei elephant base plus handelt es sich um das Grundpaket inklusive Webhosting. Wir erstellen die Website und die gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht, geben wir dir noch einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
-                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen eine Servicegebühr möglich.
-                        Das Webhosting übernehmen wir dabei ebenfalls. 
-                        </p>
-                        <ul>
-                            <li>Grafiken</li>
-                            <li>Webdesign</li>
-                            <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
-                            <li>Tipps & Tricks für die Weiterführung</li>
-                            <li>Webhosting</li>
-                        </ul> 
+                    <h2>elephant<br />base plus</h2>
+                    <p>Bei elephant base plus handelt es sich um das Grundpaket inklusive Webhosting. Wir erstellen die
+                        Website und die gewünschten Auftritte in den sozialen Medien. Sobald die Website online geht,
+                        geben wir dir noch einen Leitfaden an die Hand, wie du diese später selber anpassen kannst.
+                        Solltest du zu gegebener Zeit unsere Unterstützung für Anpassungen benötigen, ist dies gegen
+                        eine Servicegebühr möglich.
+                        Das Webhosting übernehmen wir dabei ebenfalls.
+                    </p>
+                    <ul>
+                        <li>Grafiken</li>
+                        <li>Webdesign</li>
+                        <li>Erstellung gewünschter Auftritte in den sozialen Medien</li>
+                        <li>Tipps & Tricks für die Weiterführung</li>
+                        <li>Webhosting</li>
+                    </ul>
                 </div>
                 <div class="paket-item">
                     <div class="rectangle"></div>
-                    <h1>elephant all inclusive</h1>
-                    <p>Elephant all inclusive ist dein Rundum-sorglos-Paket. Alle Optionen von elephant base plus sind enthalten. Darüber hinaus übernehmen wir für XX Jahre den kompletten Support der Website.</p>
+                    <h2>elephant<br />all inclusive</h2>
+                    <p>Elephant all inclusive ist dein Rundum-sorglos-Paket. Alle Optionen von elephant base plus sind
+                        enthalten. Darüber hinaus übernehmen wir für XX Jahre den kompletten Support der Website.</p>
                     <ul>
                         <li>Grafiken</li>
                         <li>Webdesign</li>
@@ -108,11 +138,13 @@
                         <li>Tipps & Tricks für die Weiterführung</li>
                         <li>Webhosting</li>
                         <li>Support der Website für XX Jahre</li>
-                    </ul> 
+                    </ul>
                 </div>
 
                 <p>
-                    Zusätzlich bieten wir an, deine Website so zu optimieren, dass diese von den relevanten Suchmaschinen im Internet gefunden und weit oben unter den Suchergebnissen gelistet wird. Dies ist insbesondere wichtig, um neue Kunden anzusprechen. 
+                    Zusätzlich bieten wir an, deine Website so zu optimieren, dass diese von den relevanten
+                    Suchmaschinen im Internet gefunden und weit oben unter den Suchergebnissen gelistet wird. Dies ist
+                    insbesondere wichtig, um neue Kunden anzusprechen.
                 </p>
 
             </div>
@@ -126,14 +158,14 @@
 
     <footer>
 
-        <div class="contact color-section">
+        <div class="contact color-section"  id="contact">
             <div class="tel">
-                <h1>Ruf uns einfach an</h1>
+                <h2>Ruf uns einfach an</h1>
                 <img src="img/telefon-von-altem-design.svg" class="telephone" alt="telefon">
                 <span>+49 162 6754582</span>
             </div>
             <div class="contact-form">
-                <h1>Schreibe uns eine Nachricht</h1>
+                <h2>Schreibe uns eine Nachricht</h1>
                 <form action="contact.php" method="POST">
                     <div class="top-form">
                         <input name="name" id="" placeholder="Dein Name" type="text"></input>
@@ -154,11 +186,11 @@
                     <a href="#">Impressum</a>
                 </div>
                 <div class="social-media">
-                    <img src="img/logo-twitter.png">
-                    <img src="img/logo-facebook.png">
-                    <img src="img/logo-instagram.png">
+                    <input type="image" src="img/logo-twitter.png">
+                    <input type="image" src="img/logo-facebook.png">
+                    <input type="image" src="img/logo-instagram.png">
                 </div>
-                <input type="image" id="jump-start-logo" src="img/elephantDesigns_Logo_Light.svg" />
+                <input type="image" class="logo" id="jump-start-logo" src="img/elephantDesigns_Logo_Light.svg" />
             </div>
         </div>
 
